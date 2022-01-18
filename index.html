@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Test lightbox + slider</title>
+</head>
+
+<div class="container">
+
+    <body>
+        <!-- HEADER -->
+        <div class="header">
+            <div class="PP">
+                <h1>Pauline Pierson</h1>
+            </div>
+            <div class="onglet">
+                <div class="rond" id="print">
+                    <h3>Print</h3>
+                </div>
+                <div class="rond" id="web">
+                    <h3>Web</h3>
+                </div>
+                <div class="rond" id="contact">
+                    <h3>Contact</h3>
+                </div>
+            </div>
+        </div>
+        <!-- FIN HEADER -->
+        <!-- WORK -->
+        <div class="bandeau" id="b-web">
+            <h2>Web</h2>
+        </div>
+        <div class="back-card">
+            <div class="card">
+                <h2>Kitty</h2>
+                <img id="myImg1" onclick="clickNext('myImg1')"
+                    src="../Test-lightbox-slider/image/animal-g2a22d8c06_1280.jpg" alt="Kitty" title="Kitty"
+                    style="width:100%;max-width:300px">
+                <p>Kitty</p>
+            </div>
+            <div class="card">
+                <h2>Kitty</h2>
+                <img id="myImg2" onclick="clickNext('myImg2')"
+                    src="../Test-lightbox-slider/image/cat-g8e01a6ec0_1280.jpg" alt="Lazy cat" title="Lazy cat"
+                    style="width:100%;max-width:300px">
+                <p>Lazy cat</p>
+            </div>
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img">
+                <div id="caption"></div>
+            </div>
+        </div>
+        <!-- FIN WORK -->
+        <script src="scriptlightbox.js"></script>
+        <script src="scriptslider.js"></script>
+    </body>
+
+    <footer class="foot">
+        <h4>Qui suis-je ?</h4>
+        <h4>Pauline Pierson - Tout droit réservé - Mentions légales</h4>
+    </footer>
+
+</div>
+
+</html>

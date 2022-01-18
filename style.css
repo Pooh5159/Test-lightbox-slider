@@ -1,0 +1,363 @@
+.container {
+    background-color: #5C5C5C;
+    font-family: sans-serif;
+    color: #FFFFFF;
+    padding: 2% 2%;
+}
+
+body {
+    background-color: #5C5C5C;
+}
+
+/* HEADER */
+
+.header {
+    margin-bottom: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.PP {
+    text-align: start;
+    font-size: medium;
+}
+
+.PP a:hover {
+    color: lightgrey;
+}
+
+.onglet {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.rond {
+    font-size: medium;
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+    border-radius: 150px;
+    border: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#print {
+    background-color: #ABF59F;
+    border-color: #ABF59F;
+}
+
+#print:hover {
+    background-color: #6fa367;
+    color: #ABF59F;
+    border: solid;
+    border-color: #ABF59F;
+}
+
+#web {
+    background-color: #B4F3FB;
+    border-color: #B4F3FB;
+}
+
+#web:hover {
+    background-color: #80adb3;
+    color: #B4F3FB;
+    border: solid;
+    border-color: #B4F3FB;
+}
+
+#contact {
+    background-color: #FFB0B0;
+    border-color: #FFB0B0;
+}
+
+#contact:hover {
+    background-color: #b37a7a;
+    color: #FFB0B0;
+    border: solid;
+    border-color: #FFB0B0;
+}
+
+/* BODY */
+
+.bandeau {
+    height: 70px;
+    margin-bottom: 2%;
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#b-print {
+    background-color: #ABF59F;
+}
+
+
+#b-web {
+    background-color: #B4F3FB;
+}
+
+#b-contact {
+    background-color: #FFB0B0;
+}
+
+.back-card {
+    background-color: lightgrey;
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: gray;
+    width: 500px;
+    height: 500px;
+    padding: 2% 2%;
+    text-align: center;
+}
+
+.card a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.card a:hover {
+    text-decoration: underline;
+    color: lightgrey;
+}
+
+.card img {
+    width: 100%;
+    max-height: 350px;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+
+.foot {
+    font-size: small;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.foot a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.foot a:hover {
+    text-decoration: underline;
+}
+
+/* CSS LIGHTBOX */
+
+.container img {
+    /* border-radius: 5px; */
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container img:hover {
+    opacity: 0.7;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  } */
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+/* CSS SLIDER */
+
+* {
+    box-sizing: border-box
+}
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+/* .text {
+    color: #ffffff;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  } */
+
+/* Number text (1/3 etc) */
+/* .numbertext {
+    color: #ffffff;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  } */
+
+.dots {
+    margin-top: -50px;
+    position: relative;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #999999;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #000000;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
