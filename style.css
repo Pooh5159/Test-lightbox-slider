@@ -202,7 +202,7 @@ body {
 .modal-content, #caption {
     animation-name: zoom;
     animation-duration: 0.6s;
-  }
+}
 
 @keyframes zoom {
     from {
@@ -239,9 +239,9 @@ body {
 
 /* CSS SLIDER */
 
-/* .mySlides {
+.dnone {
     display: none
-} */
+}
 
 img {
     vertical-align: middle;

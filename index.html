@@ -35,59 +35,47 @@
             <h2>Test lightbox + slider</h2>
         </div>
         <div class="back-card">
-            <div class="card">
+            <div class="card" id="slide">
                 <h2>Kitty</h2>                               
-                <div class="slideshow-container" id="slide1">
+                <div class="slideshow-container">
                     <div class="mySlides fade">
                         <img id="myImg1" onclick="clickNext('myImg1')"
                     src="../Test-lightbox-slider/image/animal-g2a22d8c06_1280.jpg" alt="Kitty" title="Kitty"
-                    style="width:100%;max-width:400px"> 
+                    style="min-width:100%"> 
                     </div>
-                    <div class="mySlides fade">
+                    <div class="mySlides fade dnone">
                         <img id="myImg2" onclick="clickNext('myImg2')"
                     src="../Test-lightbox-slider/image/cat-ge4a6fed90_1280.jpg" alt="Slurp cat" title="Slurp cat"
-                    style="width:100%;max-width:400px">
+                    style="min-width:100%">
                     </div>
+                    <a class="prev" onclick="plusSlides('slide',-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides('slide',1)">&#10095;</a>
+                </div>
+                <div class="dots" style="text-align:center">
+                    <span class="dot active" onclick="currentSlide('slide',0)"></span>
+                    <span class="dot" onclick="currentSlide('slide',1)"></span>
+                </div>
+                <p>Kitty</p>
+            </div>
+            <div class="card" id="slide1">
+                <h2>Kitty</h2>
+                <div class="slideshow-container">
                     <div class="mySlides fade">
                         <img id="myImg3" onclick="clickNext('myImg3')"
                     src="../Test-lightbox-slider/image/cat-g8e01a6ec0_1280.jpg" alt="Lazy cat" title="Lazy cat"
-                    style="width:100%;max-width:400px"> 
+                    style="min-width:100%"> 
                     </div>
-                    <div class="mySlides fade">
+                    <div class="mySlides fade dnone">
                         <img id="myImg4" onclick="clickNext('myImg4')"
                     src="../Test-lightbox-slider/image/maine-coon-gb1cf57dc3_1280.jpg" alt="Black cat" title="Black cat"
-                    style="width:100%;max-width:400px">
+                    style="min-width:100%">
                     </div>
                     <a class="prev" onclick="plusSlides('slide1',-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides('slide1',1)">&#10095;</a>
                 </div>
                 <div class="dots" style="text-align:center">
+                    <span class="dot active" onclick="currentSlide('slide1',0)"></span>
                     <span class="dot" onclick="currentSlide('slide1',1)"></span>
-                    <span class="dot" onclick="currentSlide('slide1',2)"></span>
-                    <span class="dot" onclick="currentSlide('slide1',3)"></span>
-                    <span class="dot" onclick="currentSlide('slide1',4)"></span>
-                </div>
-                <p>Kitty</p>
-            </div>
-            <div class="card">
-                <h2>Kitty</h2>
-                <div class="slideshow-container" id="slide2">
-                    <div class="mySlides fade">
-                        <img id="myImg3" onclick="clickNext('myImg3')"
-                    src="../Test-lightbox-slider/image/cat-g8e01a6ec0_1280.jpg" alt="Lazy cat" title="Lazy cat"
-                    style="width:100%;max-width:400px"> 
-                    </div>
-                    <div class="mySlides fade">
-                        <img id="myImg4" onclick="clickNext('myImg4')"
-                    src="../Test-lightbox-slider/image/maine-coon-gb1cf57dc3_1280.jpg" alt="Black cat" title="Black cat"
-                    style="width:100%;max-width:400px">
-                    </div>
-                    <a class="prev" onclick="plusSlides('slide2',-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides('slide2',1)">&#10095;</a>
-                </div>
-                <div class="dots" style="text-align:center">
-                    <span class="dot" onclick="currentSlide('slide2',3)"></span>
-                    <span class="dot" onclick="currentSlide('slide2',4)"></span>
                 </div>
                 <p>Lazy cat</p>
             </div>
@@ -108,4 +96,5 @@
     </footer>
 
 </div>
+
 </html>
